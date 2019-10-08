@@ -27,6 +27,7 @@ To find it, the user has to give two input images: **Source Image (S)** – The 
 *    By sliding, we mean moving the patch one pixel at a time (left to right, up to down). At each location, a metric is calculated so it represents how "good" or "bad" the match at that location is (or how similar the patch is to that particular area of the source image).
 
  *   For each location of T over I, you store the metric in the result matrix R. Each location (x,y) in R contains the match metric:
+ 
       ![alt text](https://docs.opencv.org/3.4/Template_Matching_Template_Theory_Result.jpg)
       
 the image above is the result R of sliding the patch with a metric TM_CCORR_NORMED. The brightest locations indicate the highest matches. As you can see, the location marked by the red circle is probably the one with the highest value, so that location (the rectangle formed by that point as a corner and width and height equal to the patch image) is considered the match.
