@@ -10,18 +10,10 @@ To find it, the user has to give two input images: **Source Image (S)** – The 
 * If the result is greater than threshold, the portion will be marked as detected.
 * In the function cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED) the first parameter is the mainimage, second parameter is the template to be matched and third parameter is the method used for matching.
 
-|	TM_SQDIFF Python: cv.TM_SQDIFF	|	R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2 	|
-
-|	TM_SQDIFF_NORMED Python: cv.TM_SQDIFF_NORMED	|	R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√ 	|
-
-|	TM_CCORR Python: cv.TM_CCORR	|	R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′)) 	|
-|	TM_CCORR_NORMED Python: cv.TM_CCORR_NORMED	|	R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′))∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√ 	|
-
-|	TM_CCOEFF Python: cv.TM_CCOEFF	|	R(x,y)=∑x′,y′(T′(x′,y′)⋅I′(x+x′,y+y′))  where  T′(x′,y′)=T(x′,y′)−1/(w⋅h)⋅∑x′′,y′′T(x′′,y′′)I′(x+x′,y+y′)=I(x+x′,y+y′)−1/(w⋅h)⋅∑x′′,y′′I(x+x′′,y+y′′) 	|
-
-|	TM_CCOEFF_NORMED Python: cv.TM_CCOEFF_NORMED	|	R(x,y)=∑x′,y′(T′(x′,y′)⋅I′(x+x′,y+y′))∑x′,y′T′(x′,y′)2⋅∑x′,y′I′(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√	|
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| Enumerator                                   |                                                                                                                                                      |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TM_SQDIFF Python: cv.TM_SQDIFF               | R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2                                                                                                                |
+| TM_SQDIFF_NORMED Python: cv.TM_SQDIFF_NORMED | R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√                                            |
+| TM_CCORR Python: cv.TM_CCORR                 | R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′))                                                                                                                 |
+| TM_CCORR_NORMED Python: cv.TM_CCORR_NORMED   | R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′))∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√                                             |
+| TM_CCOEFF Python: cv.TM_CCOEFF               | R(x,y)=∑x′,y′(T′(x′,y′)⋅I′(x+x′,y+y′)) where T′(x′,y′)=T(x′,y′)−1/(w⋅h)⋅∑x′′,y′′T(x′′,y′′)I′(x+x′,y+y′)=I(x+x′,y+y′)−1/(w⋅h)⋅∑x′′,y′′I(x+x′′,y+y′′)  |
