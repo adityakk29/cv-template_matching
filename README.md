@@ -12,7 +12,7 @@ To find it, the user has to give two input images: **Source Image (S)** – The 
 
 | Enumerator                                   |                                                                                                                                                      |
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TM_SQDIFF Python: cv.TM_SQDIFF               | R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2                                                                                                                |
+| TM_SQDIFF Python: cv.TM_SQDIFF               | R(x,y)= \sum \_{x',y'} (T(x',y')-I(x+x',y+y'))^2                                                                                                                |
 | TM_SQDIFF_NORMED Python: cv.TM_SQDIFF_NORMED | R(x,y)=∑x′,y′(T(x′,y′)−I(x+x′,y+y′))2∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√                                            |
 | TM_CCORR Python: cv.TM_CCORR                 | R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′))                                                                                                                 |
 | TM_CCORR_NORMED Python: cv.TM_CCORR_NORMED   | R(x,y)=∑x′,y′(T(x′,y′)⋅I(x+x′,y+y′))∑x′,y′T(x′,y′)2⋅∑x′,y′I(x+x′,y+y′)2−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−√                                             |
